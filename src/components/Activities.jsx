@@ -6,7 +6,7 @@ export default function Activities() {
   return (
     <section id="activities" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-20 sm:px-8">
       <Reveal>
-        <SectionHeading kicker="06 — Activities" title="Campus leadership and community." />
+        <SectionHeading kicker="07 — Activities" title="Campus leadership and community." />
       </Reveal>
       <Reveal delay={40}>
         <div className="mb-10 flex flex-wrap gap-2">

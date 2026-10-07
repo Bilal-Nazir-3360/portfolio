@@ -34,6 +34,15 @@ export default function Hero() {
             {profile.location}
           </p>
 
+          <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm">
+            <a href={profile.portfolio} target="_blank" rel="noreferrer" className="text-teal-200 underline decoration-teal-300/40 underline-offset-4 hover:text-teal-100">
+              {profile.portfolio.replace("https://", "")}
+            </a>
+            <a href={profile.orcid} target="_blank" rel="noreferrer" className="text-slate-400 underline decoration-white/20 underline-offset-4 hover:text-white">
+              ORCID profile
+            </a>
+          </div>
+
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
               href={profile.linkedin}
@@ -60,15 +69,7 @@ export default function Hero() {
               className="inline-flex cursor-pointer items-center gap-2 rounded-full border border-teal-300/40 px-5 py-2.5 text-sm font-medium text-teal-200 transition hover:bg-teal-300/15 hover:text-teal-100"
             >
               <IconDownload className="h-4 w-4" />
-              Resume
-            </a>
-            <a
-              href={`${profile.cv}?download=1`}
-              download
-              className="inline-flex cursor-pointer items-center gap-2 rounded-full border border-white/15 px-5 py-2.5 text-sm font-medium text-slate-200 transition hover:border-teal-300/40 hover:bg-teal-300/10 hover:text-teal-100"
-            >
-              <IconDownload className="h-4 w-4" />
-              Download Resume
+              Full Stack & AI Resume
             </a>
             <a
               href={profile.cvMern}
@@ -77,15 +78,7 @@ export default function Hero() {
               className="inline-flex cursor-pointer items-center gap-2 rounded-full border border-white/15 px-5 py-2.5 text-sm font-medium text-slate-200 transition hover:border-teal-300/40 hover:bg-teal-300/10 hover:text-teal-100"
             >
               <IconDownload className="h-4 w-4" />
-              MERN Resume
-            </a>
-            <a
-              href={`${profile.cvMern}?download=1`}
-              download
-              className="inline-flex cursor-pointer items-center gap-2 rounded-full border border-white/15 px-5 py-2.5 text-sm font-medium text-slate-200 transition hover:border-teal-300/40 hover:bg-teal-300/10 hover:text-teal-100"
-            >
-              <IconDownload className="h-4 w-4" />
-              Download MERN Resume
+              MERN Stack Resume
             </a>
           </div>
         </div>

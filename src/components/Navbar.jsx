@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react"
-import { profile } from "../data"
 
 const links = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Projects" },
   { href: "#research", label: "Research" },
+  { href: "#publications", label: "Publications" },
   { href: "#education", label: "Education" },
   { href: "#activities", label: "Activities" },
   { href: "#contact", label: "Contact" },
@@ -62,15 +62,6 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <a
-          href={profile.cv}
-          target="_blank"
-          rel="noreferrer"
-          className="hidden cursor-pointer rounded-full border border-teal-300/30 bg-teal-300/10 px-4 py-1.5 text-sm text-teal-200 transition hover:bg-teal-300/20 hover:text-teal-100 md:inline-flex"
-        >
-          Resume
-        </a>
-
         <button
           type="button"
           className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 text-slate-200 lg:hidden"
@@ -101,26 +92,6 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
-            <li>
-              <a href={profile.cv} target="_blank" rel="noreferrer" className="block py-1 text-teal-300" onClick={() => setOpen(false)}>
-                View Resume
-              </a>
-            </li>
-            <li>
-              <a href={`${profile.cv}?download=1`} download className="block py-1 text-teal-300" onClick={() => setOpen(false)}>
-                Download Resume
-              </a>
-            </li>
-            <li>
-              <a href={profile.cvMern} target="_blank" rel="noreferrer" className="block py-1 text-teal-300" onClick={() => setOpen(false)}>
-                View MERN Resume
-              </a>
-            </li>
-            <li>
-              <a href={`${profile.cvMern}?download=1`} download className="block py-1 text-teal-300" onClick={() => setOpen(false)}>
-                Download MERN Resume
-              </a>
-            </li>
           </ul>
         </div>
       )}

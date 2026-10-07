@@ -98,7 +98,7 @@ export default function Contact() {
     <section id="contact" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-20 sm:px-8">
       <Reveal>
         <SectionHeading
-          kicker="07 — Contact"
+          kicker="08 — Contact"
           title="Let’s build something that ships."
           copy="Open to full-stack roles, AI product work, and cybersecurity research collaborations."
         />

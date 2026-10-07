@@ -12,6 +12,8 @@ export const profile = {
   photo: "/profile.png",
   cv: "/Resume_Final.pdf",
   cvMern: "/MERN_Resume.pdf",
+  portfolio: "https://bilal-nazir.vercel.app",
+  orcid: "https://orcid.org/0009-0008-1498-625X",
 }
 
 export const about = `I am a Computer Science graduate focused on full-stack product development, AI-driven systems, and cybersecurity research. My work spans secure web applications, SAAS dashboards, and intelligent models for threat detection, phishing analysis, and generative AI. I enjoy translating research ideas into deployable solutions with measurable impact, clean architecture, and practical engineering discipline.`
@@ -140,12 +142,6 @@ export const activityTags = [
 ]
 
 export const activities = [
-  {
-    year: "2022–2026",
-    title: "B.S. Computer Science — FAST NUCES",
-    detail:
-      "Chiniot–Faisalabad Campus. Coursework spanning web engineering, machine learning, generative AI, information security, and software testing.",
-  },
   {
     year: "2026",
     title: "FYP Team Lead — Next-Gen Cyber-Attack Detection",
