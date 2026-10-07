@@ -1,7 +1,7 @@
 import { useState } from "react"
 import emailjs from "emailjs-com"
 import { profile } from "../data"
-import { IconGitHub, IconLinkedIn, IconMail, IconPhone } from "./Icons"
+import { IconGitHub, IconLinkedIn, IconMail } from "./Icons"
 import Reveal from "./Reveal"
 import SectionHeading from "./SectionHeading"
 
@@ -23,12 +23,6 @@ const contacts = [
     value: "github.com/Bilal-Nazir-3360",
     href: profile.github,
     icon: IconGitHub,
-  },
-  {
-    label: "Phone",
-    value: "+92 316 7711865",
-    href: "tel:+923167711865",
-    icon: IconPhone,
   },
 ]
 

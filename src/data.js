@@ -149,13 +149,13 @@ export const activities = [
       "Led undergraduate research on GAN-based adversarial attacks, real-time IDS evaluation, and lifelong learning for detection systems.",
   },
   {
-    year: "Ongoing",
+    year: "2022 – 2026",
     title: "Teaching Assistant · MLSA · GDSC",
     detail:
       "Campus involvement as a teaching assistant and member of Microsoft Learn Student Ambassadors and Google Developer Student Club.",
   },
   {
-    year: "Ongoing",
+    year: "2024 – 2026",
     title: "Hackathons & Open Source",
     detail:
       "Hackathon participant with public implementations of ML services and web products at github.com/Bilal-Nazir-3360.",
