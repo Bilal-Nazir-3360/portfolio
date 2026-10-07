@@ -24,6 +24,7 @@ The portfolio includes the following personal information:
 - Email: bachohan786@gmail.com
 - LinkedIn: https://www.linkedin.com/in/mbilal-nazir
 - GitHub: https://github.com/Bilal-Nazir-3360
+- Portfolio: https://bilal-nazir.vercel.app
 - Location: Chiniot, Pakistan
 
 ## Tech Stack
