@@ -11,7 +11,7 @@ export default function About() {
       <Reveal delay={80}>
         <div className="grid items-center gap-10 lg:grid-cols-[220px_1fr]">
           <div className="relative mx-auto h-48 w-48 overflow-hidden rounded-[2rem] border border-white/10 sm:h-56 sm:w-56">
-            <img src={profile.photo} alt={profile.name} className="h-full w-full object-cover" />
+            <img src={profile.photo} alt={profile.name} className="h-full w-full object-cover object-top" />
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#07090f]/40 to-transparent" />
           </div>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6 sm:p-8">

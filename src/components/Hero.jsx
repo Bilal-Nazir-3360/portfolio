@@ -62,24 +62,22 @@ export default function Hero() {
               <IconGitHub className="h-4 w-4" />
               GitHub
             </a>
-            <a
-              href={profile.cv}
-              target="_blank"
-              rel="noreferrer"
+            <button
+              type="button"
+              onClick={() => window.open("/Resume_Final.pdf", "_blank")}
               className="inline-flex cursor-pointer items-center gap-2 rounded-full border border-teal-300/40 px-5 py-2.5 text-sm font-medium text-teal-200 transition hover:bg-teal-300/15 hover:text-teal-100"
             >
               <IconDownload className="h-4 w-4" />
               Full Stack & AI Resume
-            </a>
-            <a
-              href={profile.cvMern}
-              target="_blank"
-              rel="noreferrer"
+            </button>
+            <button
+              type="button"
+              onClick={() => window.open("/MERN_Resume.pdf", "_blank")}
               className="inline-flex cursor-pointer items-center gap-2 rounded-full border border-white/15 px-5 py-2.5 text-sm font-medium text-slate-200 transition hover:border-teal-300/40 hover:bg-teal-300/10 hover:text-teal-100"
             >
               <IconDownload className="h-4 w-4" />
               MERN Stack Resume
-            </a>
+            </button>
           </div>
         </div>
 
@@ -93,7 +91,7 @@ export default function Hero() {
 {`{
   "name": "${profile.name}",
   "stack": ["MERN", "AI", "Security"],
-  "education": "FAST NUCES '26",
+  "education": "FAST NUCES 26 — CS",
   "location": "${profile.location}"
 }`}
             </pre>

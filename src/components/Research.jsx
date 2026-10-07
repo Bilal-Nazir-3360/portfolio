@@ -13,7 +13,7 @@ export default function Research() {
           <div className="pointer-events-none absolute -top-16 -right-16 h-56 w-56 rounded-full bg-violet-400/15 blur-3xl" />
           <div className="relative flex flex-wrap items-center gap-3">
             <span className="rounded-full border border-amber-300/30 bg-amber-300/10 px-3 py-1 text-xs font-medium tracking-wide text-amber-200 uppercase">
-              {research.status}
+              UNDERGRADUATE RESEARCH PROJECT
             </span>
             <span className="text-xs text-slate-500">{research.venue}</span>
           </div>
