@@ -64,19 +64,19 @@ export default function Hero() {
             </a>
             <button
               type="button"
-              onClick={() => window.open("/Resume_Final.pdf", "_blank")}
+              onClick={() => window.open(profile.cvMern, "_blank")}
               className="inline-flex cursor-pointer items-center gap-2 rounded-full border border-teal-300/40 px-5 py-2.5 text-sm font-medium text-teal-200 transition hover:bg-teal-300/15 hover:text-teal-100"
             >
               <IconDownload className="h-4 w-4" />
-              Full Stack & AI Resume
+              Full Stack / MERN Resume
             </button>
             <button
               type="button"
-              onClick={() => window.open("/MERN_Resume.pdf", "_blank")}
+              onClick={() => window.open(profile.cv, "_blank")}
               className="inline-flex cursor-pointer items-center gap-2 rounded-full border border-white/15 px-5 py-2.5 text-sm font-medium text-slate-200 transition hover:border-teal-300/40 hover:bg-teal-300/10 hover:text-teal-100"
             >
               <IconDownload className="h-4 w-4" />
-              MERN Stack Resume
+              AI & ML Resume
             </button>
           </div>
         </div>
