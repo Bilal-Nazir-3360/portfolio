@@ -61,11 +61,11 @@ The portfolio includes the following personal information:
 ### Projects Section
 - 6 project cards included:
   1. NEXTGEN-IDS
-  2. PhishGuard
-  3. Stellar Web Manager
-  4. ShopHub
-  5. DDPM
-  6. Masked Autoencoder
+2. PlanPilot
+3. PhishGuard
+4. Stellar Web Manager
+5. DDPM
+6. Masked Autoencoder
 - Each project includes a description, tags, and GitHub link
 
 ### Research Section

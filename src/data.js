@@ -10,8 +10,8 @@ export const profile = {
   github: "https://github.com/Bilal-Nazir-3360",
   location: "Chiniot, Pakistan",
   photo: "/profile.png",
-  cv: "/Resume_Final.pdf",
-  cvMern: "/MERN_Resume.pdf",
+  cv: "/Muhammad_Bilal_Nazir_AI_ML_Resume.pdf",
+  cvMern: "/Muhammad_Bilal_Nazir_Resume.pdf",
   portfolio: "https://bilal-nazir.vercel.app",
   orcid: "https://orcid.org/0009-0008-1498-625X",
 }
@@ -70,6 +70,14 @@ export const projects = [
     tags: ["GAN", "Transformer", "Reinforcement Learning", "IDS", "Security"],
   },
   {
+    name: "PlanPilot",
+    subtitle: "Full-stack MERN task manager with Kanban drag-and-drop",
+    description:
+      "A full-stack task manager with cookie-based JWT authentication, a REST API with validation and rate limiting, and a Kanban board with keyboard-accessible drag-and-drop that saves its order on the server. Runs locally from the repository; see the README.",
+    github: "https://github.com/Bilal-Nazir-3360/PlanPilot",
+    tags: ["React", "Express", "MongoDB", "JWT", "dnd-kit"],
+  },
+  {
     name: "PhishGuard",
     subtitle: "AI phishing detection with DistilBERT and XGBoost",
     description:
@@ -84,14 +92,6 @@ export const projects = [
       "A SaaS productivity dashboard with AI-powered workflows, team collaboration tools, and seamless integration of OpenAI and Gemini capabilities for smarter product operations.",
     github: "https://github.com/Bilal-Nazir-3360",
     tags: ["React", "Node.js", "MongoDB", "OpenAI", "Gemini"],
-  },
-  {
-    name: "ShopHub",
-    subtitle: "MERN e-commerce platform",
-    description:
-      "A complete MERN stack e-commerce solution with product browsing, cart management, authentication, and order flow built for a smooth online shopping experience.",
-    github: "https://github.com/Bilal-Nazir-3360",
-    tags: ["MongoDB", "Express", "React", "Node.js", "E-commerce"],
   },
   {
     name: "DDPM",
