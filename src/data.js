@@ -115,6 +115,15 @@ export const projects = [
     tags: ["ViT", "MAE", "TinyImageNet", "Self-Supervised Learning"],
     category: ["AI/ML"],
   },
+  {
+    name: "ShopHub",
+    subtitle: "MERN e-commerce platform",
+    description:
+      "A complete MERN stack e-commerce solution with product browsing, cart management, authentication, and order flow built for a smooth online shopping experience.",
+    github: "https://github.com/Bilal-Nazir-3360",
+    tags: ["MongoDB", "Express", "React", "Node.js", "E-commerce"],
+    category: ["Full-Stack"],
+    },
 ]
 
 export const research = {
