@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import AuthorReveal from "./AuthorReveal"
 import SectionHeading from "./SectionHeading"
 
 const publication = {
@@ -28,16 +29,16 @@ export default function Publications() {
       />
 
       <motion.article
-        initial={{ opacity: 0, y: 28 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ y: 28 }}
+        whileInView={{ y: 0 }}
         viewport={{ once: true, amount: 0.18 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
-        className="relative overflow-hidden rounded-3xl border border-amber-400/20 bg-gradient-to-br from-amber-500/10 via-[#0e131c] to-violet-500/5 p-7 sm:p-10"
+        className="publication-card relative overflow-hidden rounded-3xl p-7 sm:p-10"
       >
         <div className="pointer-events-none absolute -top-18 -right-16 h-56 w-56 rounded-full bg-amber-400/15 blur-3xl" />
 
         <div className="relative flex flex-wrap items-center gap-3">
-          <span className="rounded-full border border-amber-300/30 bg-amber-300/10 px-3 py-1 text-xs font-medium tracking-wide text-amber-200 uppercase">
+          <span className="under-review-badge rounded-full border border-amber-300/30 bg-amber-300/10 px-3 py-1 text-xs font-medium tracking-wide text-amber-100 uppercase">
             {publication.status}
           </span>
           <span className="text-xs text-slate-500">{publication.journal}</span>
@@ -60,9 +61,7 @@ export default function Publications() {
 
         <div className="relative mt-6">
           <p className="text-xs tracking-[0.2em] text-slate-500 uppercase">Authors</p>
-          <p className="mt-3 text-sm leading-7 text-slate-300">
-            {publication.authors.join(" • ")}
-          </p>
+          <AuthorReveal authors={publication.authors} />
         </div>
 
         <div className="relative mt-6">

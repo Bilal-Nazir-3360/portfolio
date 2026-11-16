@@ -5,9 +5,7 @@ import SectionHeading from "./SectionHeading"
 export default function Education() {
   return (
     <section id="education" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-20 sm:px-8">
-      <Reveal>
-        <SectionHeading kicker="06 — Education" title="FAST NUCES, class of 2026." />
-      </Reveal>
+      <SectionHeading kicker="06 — Education" title="FAST NUCES, class of 2026." />
       <Reveal delay={80}>
         <article className="rounded-3xl border border-white/10 bg-white/5 p-7 sm:p-10">
           <p className="font-mono text-xs tracking-wide text-teal-200/80 uppercase">{education.years}</p>
