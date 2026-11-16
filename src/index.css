@@ -433,6 +433,81 @@ button:hover,
   }
 }
 
+.education-card,
+.contact-card {
+  position: relative;
+  border: 1px solid transparent;
+  background:
+    linear-gradient(rgba(14, 19, 28, 0.84), rgba(14, 19, 28, 0.84)) padding-box,
+    var(--accent-gradient) border-box;
+  backdrop-filter: blur(16px);
+}
+
+.education-card {
+  overflow: hidden;
+}
+
+.education-card::before {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: var(--accent-gradient);
+  content: "";
+}
+
+.activity-tag {
+  border: 1px solid transparent;
+  background:
+    linear-gradient(rgba(94, 234, 212, 0.08), rgba(94, 234, 212, 0.08)) padding-box,
+    linear-gradient(110deg, rgba(94, 234, 212, 0.7), rgba(167, 139, 250, 0.65), rgba(251, 191, 36, 0.55)) border-box;
+  color: #d5fff7;
+}
+
+.activity-timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.activity-timeline__line {
+  position: absolute;
+  top: 0.35rem;
+  bottom: 0.35rem;
+  left: 0.4rem;
+  width: 2px;
+  transform-origin: top center;
+  background: linear-gradient(to bottom, var(--color-teal), var(--color-violet), var(--color-amber));
+}
+
+.activity-timeline__entry {
+  position: relative;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.activity-timeline__dot {
+  position: absolute;
+  top: 0.25rem;
+  left: -1.95rem;
+  width: 0.85rem;
+  height: 0.85rem;
+  border: 2px solid var(--color-teal);
+  border-radius: 9999px;
+  background: var(--color-ink);
+  box-shadow: 0 0 14px rgba(94, 234, 212, 0.35);
+}
+
+.contact-card {
+  min-width: 0;
+  box-shadow: 0 14px 50px rgba(0, 0, 0, 0.16);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  border-color: transparent;
+  box-shadow: 0 0 36px rgba(94, 234, 212, 0.18);
+}
+
 @keyframes photo-ring-rotate {
   to {
     transform: rotate(360deg);
@@ -554,6 +629,11 @@ button:hover,
     animation: none;
   }
 
+  .contact-card,
+  .research-metric {
+    transition: none;
+  }
+
   .project-card {
     perspective: none;
   }
@@ -586,6 +666,13 @@ button:hover,
     top: 0;
     left: 50%;
     animation-name: research-dot-vertical;
+  }
+}
+
+@media (min-width: 640px) {
+  .activity-timeline__entry {
+    grid-template-columns: 110px 1fr;
+    gap: 2rem;
   }
 }
 
