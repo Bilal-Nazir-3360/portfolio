@@ -176,6 +176,93 @@ button:hover,
   animation: gradient-shift 9s ease-in-out infinite;
 }
 
+.about-photo-ring {
+  isolation: isolate;
+  background: var(--accent-gradient);
+  box-shadow: 0 0 55px rgba(94, 234, 212, 0.2);
+  animation: photo-ring-rotate 16s linear infinite;
+}
+
+.about-photo-ring::before {
+  position: absolute;
+  inset: -0.5rem;
+  z-index: -1;
+  border-radius: inherit;
+  background: var(--accent-gradient);
+  content: "";
+  opacity: 0.35;
+  filter: blur(20px);
+}
+
+.about-bio-card {
+  border: 1px solid transparent;
+  background:
+    linear-gradient(rgba(14, 19, 28, 0.72), rgba(14, 19, 28, 0.72)) padding-box,
+    var(--accent-gradient) border-box;
+  backdrop-filter: blur(18px);
+}
+
+.skill-marquee {
+  display: grid;
+  gap: 0.75rem;
+  width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 7%, black 93%, transparent);
+}
+
+.skill-marquee__window {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.skill-marquee__track {
+  display: flex;
+  width: max-content;
+  gap: 0.75rem;
+  animation: skill-marquee 38s linear infinite;
+}
+
+.skill-marquee__track--reverse {
+  animation-direction: reverse;
+  animation-duration: 44s;
+}
+
+.skill-marquee:hover .skill-marquee__track {
+  animation-play-state: paused;
+}
+
+.skill-marquee__pill {
+  flex: 0 0 auto;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 9999px;
+  background: rgba(7, 9, 15, 0.72);
+  padding: 0.55rem 0.85rem;
+  color: #dbeafe;
+  font-size: 0.875rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+.skill-marquee__pill:hover {
+  border-color: transparent;
+  color: #ffffff;
+  box-shadow: 0 0 22px rgba(167, 139, 250, 0.3);
+  background:
+    linear-gradient(rgba(7, 9, 15, 0.88), rgba(7, 9, 15, 0.88)) padding-box,
+    var(--accent-gradient) border-box;
+}
+
+@keyframes photo-ring-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes skill-marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 .network-background {
   position: absolute;
   inset: 0;
@@ -259,8 +346,35 @@ button:hover,
   .background-glow__blob,
   .hero-name-gradient,
   .animate-float,
-  .animate-pulse-ring {
+  .animate-pulse-ring,
+  .about-photo-ring,
+  .skill-marquee__track {
     animation: none;
+  }
+
+  .skill-marquee {
+    display: flex;
+    flex-wrap: wrap;
+    mask-image: none;
+  }
+
+  .skill-marquee__window,
+  .skill-marquee__track {
+    display: contents;
+  }
+
+  .skill-marquee__pill {
+    margin-bottom: 0.75rem;
+  }
+}
+
+@media (max-width: 767px) and (prefers-reduced-motion: no-preference) {
+  .skill-marquee__track {
+    animation-duration: 58s;
+  }
+
+  .skill-marquee__track--reverse {
+    animation-duration: 66s;
   }
 }
 
