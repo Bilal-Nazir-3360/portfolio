@@ -19,7 +19,7 @@ export const profile = {
 export const about = `I am a Computer Science graduate focused on full-stack product development, AI-driven systems, and cybersecurity research. My work spans secure web applications, SAAS dashboards, and intelligent models for threat detection, phishing analysis, and generative AI. I enjoy translating research ideas into deployable solutions with measurable impact, clean architecture, and practical engineering discipline.`
 
 export const highlights = [
-  ["7+", "Shipped projects"],
+  ["6", "Projects"],
   ["FYP", "AI security"],
   ["CS", "FAST ’26"],
 ]
