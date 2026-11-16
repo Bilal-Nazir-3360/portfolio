@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "emailjs-com": "^3.2.0",
-    "framer-motion": "^14.0.0",
+    "framer-motion": "^14.14.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },

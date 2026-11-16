@@ -1,6 +1,8 @@
 import About from "./components/About"
 import Activities from "./components/Activities"
+import BackgroundGlow from "./components/BackgroundGlow"
 import Contact from "./components/Contact"
+import CursorGlow from "./components/CursorGlow"
 import Education from "./components/Education"
 import Footer from "./components/Footer"
 import Hero from "./components/Hero"
@@ -12,20 +14,24 @@ import Skills from "./components/Skills"
 
 export default function App() {
   return (
-    <div className="bg-[#07090f]">
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Research />
-        <Publications />
-        <Education />
-        <Activities />
-        <Contact />
-      </main>
-      <Footer />
+    <div className="relative isolate bg-[#07090f]">
+      <BackgroundGlow />
+      <CursorGlow />
+      <div className="relative z-10">
+        <Navbar />
+        <main>
+          <Hero />
+          <About />
+          <Skills />
+          <Projects />
+          <Research />
+          <Publications />
+          <Education />
+          <Activities />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
     </div>
   )
 }
