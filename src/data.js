@@ -68,6 +68,7 @@ export const projects = [
       "A next-generation intrusion detection platform combining GAN-generated adversarial traffic, transformer-based sequence modeling, and reinforcement learning to improve resilience against modern cyberattacks.",
     github: "https://github.com/Bilal-Nazir-3360",
     tags: ["GAN", "Transformer", "Reinforcement Learning", "IDS", "Security"],
+    category: ["AI/ML", "Security"],
   },
   {
     name: "PlanPilot",
@@ -76,6 +77,7 @@ export const projects = [
       "A full-stack task manager with cookie-based JWT authentication, a REST API with validation and rate limiting, and a Kanban board with keyboard-accessible drag-and-drop that saves its order on the server. Runs locally from the repository; see the README.",
     github: "https://github.com/Bilal-Nazir-3360/PlanPilot",
     tags: ["React", "Express", "MongoDB", "JWT", "dnd-kit"],
+    category: ["Full-Stack"],
   },
   {
     name: "PhishGuard",
@@ -84,6 +86,7 @@ export const projects = [
       "AI phishing detection system achieving 92–98% URL accuracy through DistilBERT and XGBoost models, designed for real-time threat analysis and safer browsing decisions.",
     github: "https://github.com/Bilal-Nazir-3360/PhishGuard",
     tags: ["DistilBERT", "XGBoost", "Python", "AI Security", "NLP"],
+    category: ["AI/ML", "Security"],
   },
   {
     name: "Stellar Web Manager",
@@ -92,6 +95,7 @@ export const projects = [
       "A SaaS productivity dashboard with AI-powered workflows, team collaboration tools, and seamless integration of OpenAI and Gemini capabilities for smarter product operations.",
     github: "https://github.com/Bilal-Nazir-3360",
     tags: ["React", "Node.js", "MongoDB", "OpenAI", "Gemini"],
+    category: ["Full-Stack", "AI/ML"],
   },
   {
     name: "DDPM",
@@ -100,6 +104,7 @@ export const projects = [
       "A denoising diffusion model trained on 30,000 CelebA-HQ images using dual T4 GPUs, demonstrating high-quality sample generation and structured visual synthesis workflows.",
     github: "https://github.com/Bilal-Nazir-3360",
     tags: ["PyTorch", "Diffusion", "Generative AI", "T4 GPUs"],
+    category: ["AI/ML"],
   },
   {
     name: "Masked Autoencoder",
@@ -108,6 +113,7 @@ export const projects = [
       "A ViT-based masked autoencoder trained self-supervised on TinyImageNet for representation learning, reconstruction quality, and efficient visual understanding.",
     github: "https://github.com/Bilal-Nazir-3360/GenAI-Assignment-2-MAE",
     tags: ["ViT", "MAE", "TinyImageNet", "Self-Supervised Learning"],
+    category: ["AI/ML"],
   },
 ]
 
