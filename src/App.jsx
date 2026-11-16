@@ -1,34 +1,33 @@
+import AnimationPauseManager from "./components/AnimationPauseManager"
 import About from "./components/About"
-import Activities from "./components/Activities"
 import BackgroundGlow from "./components/BackgroundGlow"
-import Contact from "./components/Contact"
 import CursorGlow from "./components/CursorGlow"
-import Education from "./components/Education"
 import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
-import Projects from "./components/Projects"
-import Publications from "./components/Publications"
-import Research from "./components/Research"
-import Skills from "./components/Skills"
+import DeferredSection from "./components/DeferredSection"
+import ScrollProgress from "./components/ScrollProgress"
 
 export default function App() {
   return (
     <div className="relative isolate bg-[#07090f]">
+      <a className="skip-link" href="#main-content">Skip to content</a>
+      <ScrollProgress />
+      <AnimationPauseManager />
       <BackgroundGlow />
       <CursorGlow />
       <div className="relative z-10">
         <Navbar />
-        <main>
+        <main id="main-content">
           <Hero />
-          <About />
-          <Skills />
-          <Projects />
-          <Research />
-          <Publications />
-          <Education />
-          <Activities />
-          <Contact />
+          <DeferredSection loader={() => import("./components/About")} />
+          <DeferredSection loader={() => import("./components/Skills")} />
+          <DeferredSection loader={() => import("./components/Projects")} />
+          <DeferredSection loader={() => import("./components/Research")} />
+          <DeferredSection loader={() => import("./components/Publications")} />
+          <DeferredSection loader={() => import("./components/Education")} />
+          <DeferredSection loader={() => import("./components/Activities")} />
+          <DeferredSection loader={() => import("./components/Contact")} />
         </main>
         <Footer />
       </div>
